@@ -20,40 +20,45 @@
 
 <body>
 
-    <div class="container my-3">
+    <div class="container my-3 text-white">
         <div class="row">
             <div class="col-md-8 mx-auto">
                 <h2>Sign Up and Start Learning!</h2>
                 <br />
-                <label style="color: tomato">${message}</label>
+                <!-- <label style="color: tomato">${message}</label> -->
                 <br />
                 <form:form action="${pageContext.request.contextPath}/create" method="POST" modelAttribute="user">
                     <div class="form-row">
-                        <div class="col-md-6 form-group">
-                            <label>First Name</label>
-                            <form:input path="firstName" class="form-control" placeholder="First Name" />
+                        <div class=" col-md-6 form-group">
+                            <label for="fname">First Name</label>
+                            <input type="text" path="firstName" class="form-control" placeholder="First Name" />
+                        </div>
+                        <div class=" col-md-6 form-group">
+                            <label for="fname">Last Name</label>
+                            <input path="lastName" class="form-control" placeholder="Last Name" />
                         </div>
                         <div class="col-md-6 form-group">
-                            <label>Last Name</label>
-                            <form:input path="lastName" class="form-control" placeholder="Last Name" />
+                            <label for="exampleInputEmail">Email</label>
+                            <input path="email" class="form-control" placeholder="Email Address" />
                         </div>
-                        <div class="col-md-6 form-group">
-                            <label>Email</label>
-                            <form:input path="email" class="form-control" placeholder="Email Address" />
+                        <div class=" col-md-6 form-group">
+                            <label for="exampleInputUsername">Username</label>
+                            <input path="username" class="form-control" placeholder="Username" />
                         </div>
-                        <div class="col-md-6 form-group">
-                            <label>Username</label>
-                            <form:input path="username" class="form-control" placeholder="Username" />
+                        <div class=" col-md-6 form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input path="password" class="form-control" placeholder="Password" />
                         </div>
-                        <div class="col-md-6 form-group">
-                            <label>Password</label>
-                            <form:input path="passwd" class="form-control" placeholder="Password" />
+
+                        <div class=" col-md-6 form-group">
+                            <label for="exampleInputPassword2">Verify Password</label>
+                            <input path="passwd" class="form-control" placeholder=" Password" />
                         </div>
-                        <div class="col-md-6 form-group">
+                        <!-- <div class="col-md-6 form-group">
                             <label>Role</label>
                             <form:select path="rolesList" items="${roloi}" itemValue="rid" class="form-control"
                                 itemLabel="role" multiple="false" />
-                        </div>
+                        </div> -->
 
                         <br />
                         <!--<form:input path="passwd" placeholder="Confirm Password"/>

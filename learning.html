@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <style>
+        .sidebar {
+            /* min-width: 250px;*/
+            /*max-width: 80%;*/
+            min-height: 80vh;
+            background-color: cadetblue;
+        }
+
+        .main-container {
+            display: flex;
+            width: 100%;
+            align-items: stretch;
+
+        }
+
+        .main-content {
+            margin-right: 20px;
+
+        }
+
+        .video-section {
+            height: 60vh;
+        }
+
+        .text-section {
+            height: 20vh;
+        }
+
+        .components li {
+
+
+            border: 2px solid grey;
+            text-align: center;
+            border-radius: 5%;
+            box-shadow: 2px 3px black;
+
+        }
+    </style>
+</head>
+
+<body class="bg-dark">
+    <div class="row title-container d-flex justify-content-center text-white">
+        <h1>Title</h1>
+    </div>
+
+    <div class="main-container">
+
+
+        <nav class=" sidebar col-1 h-100 mt-5">
+            <div class="sidebar-header">
+                <h3>Chapter 1</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Dummy Heading</p>
+
+                <li>
+                    <a href="#">Topic 1</a>
+                </li>
+                <li>
+                    <a href="#">Topic 2</a>
+                </li>
+                <li>
+                    <a href="#">Topic 3</a>
+                </li>
+                <li>
+                    <a href="#">Topic 4</a>
+                </li>
+                <li>
+                    <a href="#">Topic 5</a>
+                </li>
+                <li>
+                    <a href="#">Topic 6</a>
+                </li>
+                <li>
+                    <a href="#">Topic 7</a>
+                </li>
+                <li>
+                    <a href="#">Topic 8</a>
+                </li>
+                <li>
+                    <a href="#">Topic 9</a>
+                </li>
+                <li>
+                    <a href="#">Topic 10</a>
+                </li>
+            </ul>
+        </nav>
+
+
+
+
+        <div class="main-content mt-5">
+            <section class=" video-section col-10 bg-info">
+
+                <!-- 21:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-21by9">
+                    <iframe class="embed-responsive embed-responsive-21by9 width=" 1280" height="720"
+                        src="https://www.youtube.com/embed/eIrMbAQSU34" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                </div>
+
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="..."></iframe>
+                </div>
+
+                <!-- 4:3 aspect ratio -->
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="..."></iframe>
+                </div>
+
+                <!-- 1:1 aspect ratio -->
+                <div class="embed-responsive embed-responsive-1by1">
+                    <iframe class="embed-responsive-item" src="..."></iframe>
+                </div>
+            </section>
+
+            <section class="text-section col-10 bg-white p-2">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui amet veritatis pariatur quae
+                aspernatur
+                eos laborum similique expedita repellendus! Expedita, iste doloribus fugiat libero delectus quas
+                natus
+                beatae! Veniam, officiis!
+            </section>
+
+            <section class="row d-flex justify-content-center ">
+                <nav aria-label="page-navigation col">
+                    <ul class="pagination pagination-sm ">
+                        <li class="page-item active" aria-current="page">
+                            <span class="page-link">
+                                1
+                                <span class="sr-only ">(current)</span>
+                            </span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>
